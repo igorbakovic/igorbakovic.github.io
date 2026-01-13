@@ -31,6 +31,28 @@
             text-align: center;
         }
 
+        /* Sticky top navigation */
+        .top-nav {
+            position: sticky;
+            top: 0;
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+
+        .top-nav a {
+            color: #0366d6;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
         /* Social links */
         .social-links {
             list-style: none;
@@ -43,7 +65,7 @@
             margin: 0 10px;
         }
 
-        /* Section lists (Research, Publications) */
+        /* Section lists (Research, Preprints, Publications) */
         section ul {
             list-style: disc;
             padding-left: 40px;
@@ -72,13 +94,22 @@
 
 <body>
 
+    <!-- Sticky navigation -->
+    <nav class="top-nav">
+        <a href="#about">About</a> |
+        <a href="#research">Research</a> |
+        <a href="#preprints">Preprints</a> |
+        <a href="#publications">Publications</a> |
+        <a href="#cv">CV</a>
+    </nav>
+
     <img src="profile.jpg" alt="Profile photo" class="profile-photo">
 
     <h1>Igor Baković</h1>
 
     <p>Welcome to my personal website.</p>
 
-    <section>
+    <section id="about">
         <h2>About</h2>
         <p>
             I am a category theorist interested in the foundations of mathematics,
@@ -88,16 +119,31 @@
         </p>
     </section>
 
-    <section>
+    <section id="research">
         <h2>Research</h2>
         <ul>
-            <li>Category theory</li>
+            <li>Category theory and its foundations</li>
             <li>Logic and type theory</li>
             <li>Theoretical computer science</li>
         </ul>
     </section>
 
-    <section>
+    <!-- Preprints section -->
+    <section id="preprints">
+        <h2>Preprints</h2>
+        <ul>
+            <li>
+                <strong>The simplicial interpretation of bigroupoid 2-torsors</strong>, 
+                <a href="https://arxiv.org/abs/0902.3436" target="_blank">arXiv:0902.3436</a>
+            </li>
+            <li>
+                <strong>Comma 2-comonad I: Eilenberg-Moore 2-category of colax coalgebras</strong>, 
+                <a href="https://arxiv.org/abs/2505.00682" target="_blank">arXiv:2505.00682</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="publications">
         <h2>Publications</h2>
         <ul>
             <li>
@@ -122,8 +168,8 @@
     </section>
 
     <!-- CV download link -->
-    <p>
-        <a href="cv.pdf" target="_blank">Download my CV</a>
+    <p id="cv">
+        <a href="Igor_Bakovic_CV.pdf" target="_blank">Download my CV</a>
     </p>
 
     <!-- Social links at the bottom -->
