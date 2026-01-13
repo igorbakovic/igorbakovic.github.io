@@ -22,7 +22,7 @@
             margin: 0 auto 20px auto;
         }
 
-        h1 {
+        h1, h2 {
             color: #333;
             text-align: center;
         }
@@ -31,15 +31,32 @@
             text-align: center;
         }
 
-        ul {
+        /* Social links */
+        .social-links {
             list-style: none;
             padding: 0;
             text-align: center;
         }
 
-        li {
+        .social-links li {
             display: inline;
             margin: 0 10px;
+        }
+
+        /* Section lists (Research, Publications) */
+        section ul {
+            list-style: disc;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        section li {
+            display: list-item;
+            margin: 10px 0;
+        }
+
+        section {
+            margin-top: 50px;
         }
 
         a {
@@ -59,54 +76,56 @@
 
     <h1>Igor Baković</h1>
 
-    <p>
-        Hi! I'm <strong>Igor Baković</strong>.<br>
-        Welcome to my personal website.
-    </p>
+    <p>Welcome to my personal website.</p>
 
     <p>
-        I’m a category theorist, working on foundations of mathematics, logic, and theoretical computer science.
+        I’m a category theorist, working on foundations of mathematics, logic,
+        and theoretical computer science.
     </p>
 
     <p>You can find me on:</p>
 
-    <ul>
+    <ul class="social-links">
         <li><a href="https://github.com/igorbakovic">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/igor-baković-749b025a">LinkedIn</a></li>
         <li><a href="https://x.com/bakovic_igor">X</a></li>
         <li><a href="https://www.facebook.com/igor.bakovic.3">Facebook</a></li>
     </ul>
 
+    <section>
+        <h2>About</h2>
+        <p>
+            I am a category theorist interested in the foundations of mathematics,
+            logic, and theoretical computer science. My work focuses on abstract
+            structures and their applications across different areas of mathematics
+            and computation.
+        </p>
+    </section>
+
+    <section>
+        <h2>Research</h2>
+        <ul>
+            <li>Category theory and its foundations</li>
+            <li>Logic and type theory</li>
+            <li>Theoretical computer science</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        <ul>
+            <li>
+                <strong>P. Aschieri, I. Baković, B. Jurčo, P. Schupp</strong>,
+                <em>Noncommutative gerbes and deformation quantization</em>,
+                Journal of Geometry and Physics 60(11), 2010, 1754–1761.
+            </li>
+            <li>
+                <strong>I. Baković, B. Jurčo</strong>,
+                <em>The classifying topos of a topological bicategory</em>,
+                Homology, Homotopy and Applications 12(1), 2010, 279–300.
+            </li>
+        </ul>
+    </section>
+
 </body>
-<section>
-    <h2>About</h2>
-    <p>
-        I am a category theorist interested in the foundations of mathematics,
-        logic, and theoretical computer science. My work focuses on abstract
-        structures and their applications across different areas of mathematics
-        and computation.
-    </p>
-</section>
-
-<section>
-    <h2>Research</h2>
-    <ul>
-        <li>Category theory and its foundations</li>
-        <li>Logic and type theory</li>
-        <li>Theoretical computer science</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Publications</h2>
-    <ul>
-        <li>
-            <strong>P. Aschieri, I. Baković, B. Jurčo, P. Schupp, Noncommutative gerbes and deformation quantization</strong>, Journal of Geometry and Physics 60 (11), (2010) 1754-1761.
-        </li>
-        <li>
-            <strong> Baković, B. Jurčo, The classifying topos of a topological bicategory, Homology</strong>, Homotopy and Applications 12(1), (2010) 279-300.
-        </li>
-    </ul>
-</section>
-
 </html>
